@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="us">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="menu-employ_from.css?v=<?php echo time(); ?>">
+    <link rel="shortcut icon" type="image/png" href="../media/icon.png">
+    <link href='https://fonts.googleapis.com/css?family=Source Sans Pro' rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel="stylesheet">
+    <script src="../java/java.js"></script>   
+    <title>Employment Application - CyberVisionir</title>
+</head>
+<style>
+    ::-webkit-scrollbar{
+        width: 10px;
+    }
+    ::-webkit-scrollbar-track{
+        background: #f5f3ee;
+    }
+    ::-webkit-scrollbar-thumb{
+        background: #888;
+    } 
+    ::-webkit-scrollbar-thumb:hover{
+        background: #555;
+    }
+</style>
+<body>
+    <header class="navbar">
+        <div class="icon">
+            <a href="../index.html"><img class="logo" src="../media/logosite_hover.png"></a>
+        </div>
+        <div class="menu">
+            <ul>
+                <li class="con"><a href="../concept/concept.html">CONCEPT</a></li>  
+                <li><a href="../asociation/cars.html">CARS</a>
+                    <ul>
+                        <li><a href="../asociation/cars.html#mercedesbenz" class="lin">MERCEDES-BENZ</a></li>
+                        <li><a href="../asociation/cars.html#tesla" class="lin">TESLA</a></li>
+                        <li><a href="../asociation/cars.html#bmw" class="lin">BMW</a></li>
+                        <li><a href="../asociation/cars.html#volkswagen" class="lin">VOLKSWAGEN</a></li>
+                    </ul>
+                </li>
+                <li><a href="../aboutus/aboutus.html">ABOUT US</a>
+                    <ul>
+                        <li><a href="../aboutus/aboutus.html#team" class="lin">TEAM</a></li>
+                        <li><a href="../aboutus/aboutus.html#services" class="lin">SERVICES</a></li>
+                        <li><a href="../employ_form/employ_form.html" class="lin">EMPLOYMENT FORM</a></li>
+                    </ul>
+                </li>
+                <li><a href="../aboutus/contactus.html">CONTACT</a></li> 
+            </ul>
+        </div>
+    </header>
+
+    <section class="main">
+        <div class="page">
+            <h1>EMPLOYMENT APPLICATION</h1>
+            <p class="par">... be part of our team ...</p>
+        </div>
+    </section>
+
+    <section class="form reveal" >
+        <div class="form-text">
+            <form method="POST" action="employ_form.php" class="zone" novalidation>
+                <h1>Applicant Informations</h1><br><br>
+                <label for="n">First name *</label>
+                        <input type="text" id="n" name="name" required>
+                <label for="ln">Last name *</label>
+                        <input type="text" id="ln" name="lname" required>
+                <label for="bi">Birthday</label>
+                        <input type="text" id="bi" name="birthday" required>
+                <label for="g">Genre</label>
+                        <select name="genre" id="g">
+                            <option value="">----</option>
+                            <option value="Man">Man</option>
+                            <option value="Woman">Woman</option>
+                        </select><br><br>
+
+                <label for="a">Address *</label>
+                        <input type="text" id="a" name="adress" required >
+                <label for="c">City *</label>
+                        <input type="text" id="c" name="city" required ><br><br>
+
+                <label for="na">Nationality *</label>
+                        <input type="text" id="na" name="nationality" required >
+                <label for="co">Country *</label>
+                        <input type="text" id="co" name="country" required><br><br>
+
+                <label for="e">Email</label>
+                        <input type="text" id="e" name="email" required >
+                <label for="p">Phone Number</label>
+                        <input type="text" id="p" name="ph_number" required><br><br><br>
+
+                <label for="s">Desired Salary ** </label>
+                        <input type="text" id="s" name="salary" required>
+                <label for="pos">Position Applied for:</label>
+                        <input type="text" id="pos" name="position" required>
+                <br><br><br><br>
+
+                <h1>Education</h1><br><br>
+                <label for="hi">Pre-University Studies / High School *</label>
+                        <input type="text" id="hi" name="high" required><br><br>
+                <label for="h">Have you graduate?</label><br>
+                        <input type="radio" id="h" name="res1" value="Y">Yes</label>
+                        <input type="radio" id="h" name="res1" value="N">No</label><br><br>
+                
+                <label for="university">Higher Education / University *</label>
+                        <input type="text" id="university" name="uni" required><br><br>
+                <label for="univ">Have you graduate?</label><br>
+                        <input type="radio" id="univ" name="res2" value="Y">Yes</label>
+                        <input type="radio" id="univ" name="res2" value="N">No</label>
+                <br><br>
+                <input type="submit" onclick="alert('Your form has been submit!')" value="Submit" class="btn">
+            </form>
+            <div class="border">
+                *  Don't use diacritics.<br>
+                ** The salary must be in Dollars ($)
+            </div>
+        </div>  
+    </section>
+
+    <section class="navbar-footer">
+        <div class="menu-footer">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../aboutus/aboutus.html">About</a></li>
+                <li><a href="../aboutus/aboutus.html#services">Services</a></li>
+                <li><a href="../aboutus/contactus.html">Contact</a></li>
+            <ul>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <hr>
+        <div>
+            <p>
+                Copyright © 1999-2022 CyberVisionir. All Rights Reserved
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

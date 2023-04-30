@@ -1,0 +1,243 @@
+*{
+    margin:0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #f5f3ee;
+}
+
+.main{
+    background: linear-gradient(to top, rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../media/employee.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.navbar{
+    position: absolute;
+    width: 1400px;
+    height: 100px;
+    margin: auto;
+    left: 350px;
+}
+.icon{
+    position: absolute;
+    width: 15%;
+    float: left;
+    height: auto;
+    margin-top:3%;
+}
+.logo{
+    width: 70%;
+    float: center;
+    height: auto;
+}
+.menu{
+    position: absolute;
+    width: 50%;
+    height: 70%;
+    margin-top: 2.2%;
+    margin-left: 30%;
+}
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+}
+ul li{
+    list-style-type: none;
+    margin-left: 20%;
+    margin-top: 5%;
+    font-size: 18px;
+}
+ul li a{
+    text-decoration: none;
+    color:white;
+    font-family: 'Source Sans Pro';
+    font-weight: bold;
+    transition: 0.5s ease-in-out;
+    letter-spacing: 1px;
+}
+ul li a:hover{
+    color: #a187e9;
+}
+ul li ul{
+    width: 200%;
+    float: left;
+    justify-content: center;
+    align-items: center;
+    display: block; 
+}
+ul li ul li a{
+    padding: 8px 18px;
+    position: relative;
+    font-size: 17px; 
+}
+ul li ul li a:hover {
+    color: #a187e9
+}
+ul li ul{
+    visibility:hidden;
+}
+ul li:hover ul{
+    visibility:visible;
+}
+.lin{
+    left: -33%;
+    text-align: center;
+}
+.con{
+    padding-right: 7%;
+}
+
+.page{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.page h1{
+    color: white;
+    font-size: 400%;
+    font-family: 'Raleway';
+    text-align: center;
+}
+.page .par{
+    padding-top: 3%;
+    text-align: center;
+    color: white;
+    font-size: 170%;
+    font-family: 'Source Sans Pro';
+    padding-bottom: 2%;
+}
+
+.form{
+    margin-top: 2%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 20px;
+    width: 80%;
+    left: 24px;
+    margin-left:1.5%;
+    height: auto;
+}
+.form-text{
+    background: #654ea3;
+    background: linear-gradient(to left, #eaafc8, #654ea3);
+    height: auto;
+    width: 1760px;
+    margin-top: -10%;
+    padding-bottom: 3%;
+}
+.form-text .zone{
+    padding-left: 7.5%;
+    margin-top: 5%;
+    color: #fff;
+    font-size: 130%;
+    font-style: italic;
+    font-family: 'Source Sans Pro';
+    border: none;
+}
+.zone h1{
+    font-size: 150%;
+}
+.btn{
+    font-family: 'Source Sans Pro';
+    padding: 10px 30px;
+    border: 1px solid #fff;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.4s ease-in-out;
+}
+.btn:hover{
+    background-color: #a187e9;
+    color: #fff;
+}
+.form-text .border{
+    padding-left: 7.5%;
+    padding-top: 3%;
+    font-family: 'Source Sans Pro';
+    font-size: 80%;
+    color: rgb(196, 196, 196);
+}
+
+.footer{
+    width:100%;
+    margin-top: 3%;
+}
+.footer hr{
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0%);
+    color: rgb(134, 134, 134);
+}
+.footer div{
+    padding:1.5% 0%;
+}
+.footer p{
+    text-align: center;
+    font-family: 'Source Sans Pro';
+    size:100%;
+    color: rgb(119, 119, 119);
+    font-weight: bold;
+}
+.navbar-footer{
+    position: absolute;
+    width: 400px;
+    height: 100px;
+    margin: auto;
+    left: 40%;
+}
+.menu-footer{
+    position: absolute;
+    width: 50%;
+    height: 10%;
+    margin-top: 6%;
+}
+.menu-footer ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+}
+.menu-footer ul li{
+    list-style-type: none;
+    margin-left: 70%;
+    font-size: 70%;
+}
+.menu-footer ul li a{
+    text-decoration: none;
+    color:rgb(119, 119, 119);
+    font-family: 'Source Sans Pro';
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 0.8s all ease;
+  }
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+input[type=text] {
+    border: none;
+    border-bottom: 2px solid #fff;
+    background: none;
+}
+input[type=text]:focus {
+    border-bottom: 3px solid #555;
+}
+
+select {
+    border: none;
+    border-radius: 4px;
+    background-color: #a187e9;
+    color: #fff;
+  }

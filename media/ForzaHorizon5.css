@@ -1,0 +1,339 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Century Gothic;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    background: black;
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 10px;
+    transition: 0.8 ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #DAA520;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+.header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Images/Fundal 2.jpeg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+ul {
+    list-style-type: none;
+    float: right;
+    margin: 3%;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+}
+
+ul li a:hover {
+    background-color: #DAA520;
+    color: black;
+}
+
+ul li.active a {
+    background-color: #DAA520;
+    color: black;
+}
+
+.title {
+    position: absolute;
+    top: 31%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: title 1.5s;
+    padding-bottom: 2%;
+}
+
+.title h1 {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Common Pixel', sans-serif;
+}
+
+.logo img {
+    float: left;
+    width: 120px;
+    height: auto;
+}
+
+.main {
+    max-width: 900px;
+    margin: auto;
+}
+
+.text1 {
+    position: absolute;
+    top: 40%;
+    left: 24.7%;
+    transform: translate(-50%, -50%);
+    color: aliceblue;
+}
+
+.text2 {
+    position: absolute;
+    top: 46%;
+    left: 23.9%;
+    transform: translate(-50%, -50%);
+    color: aliceblue;
+}
+
+.text3 {
+    position: absolute;
+    top: 52%;
+    left: 25.2%;
+    transform: translate(-50%, -50%);
+    color: aliceblue;
+}
+
+.text4 {
+    position: absolute;
+    top: 58%;
+    left: 25.2%;
+    transform: translate(-50%, -50%);
+    color: aliceblue;
+}
+
+.containerg {
+    width: 60%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(70, 70, 70, 0.541);
+}
+
+.containers {
+    width: 60%;
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(70, 70, 70, 0.541);
+}
+
+.containerst {
+    width: 60%;
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(70, 70, 70, 0.541);
+}
+
+.containergmp {
+    width: 60%;
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(70, 70, 70, 0.541);
+}
+
+.skills {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: aliceblue;
+}
+
+.graphics {
+    width: 100%;
+    background-color: #DAA520;
+    animation: graphics 3s;
+}
+
+.story {
+    width: 70%;
+    background-color: #DAA520;
+    animation: story 3s;
+}
+
+.soundtrack {
+    width: 90%;
+    background-color: #DAA520;
+    animation: soundtrack 3s;
+}
+
+.gameplay {
+    width: 95%;
+    background-color: #DAA520;
+    animation: gameplay 3s;
+}
+
+@keyframes graphics {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes story {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 70%;
+    }
+}
+
+@keyframes soundtrack {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes gameplay {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 95%;
+    }
+}
+
+@keyframes title {
+    0% {
+        top: 0%;
+        left: 50%;
+        opacity: 0;
+    }
+    100% {
+        top: 31%;
+        left: 50%;
+        opacity: 1;
+    }
+}
+
+.Informatii {
+    width: 100%;
+    background-color: #DAA520;
+    padding: 60px;
+    margin-top: 0.8%;
+}
+
+.textinfo {
+    text-align: center;
+    color: #000000;
+    font-size: 20px;
+}
+
+.requirements {
+    margin-top: 1.2%;
+}
+
+.requirements p {
+    font-size: 40px;
+    font-family: 'Common Pixel', sans-serif;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 1.2%;
+}
+
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 60%;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+
+td,
+th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #DAA520;
+}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #DAA520;
+    color: white;
+}
+
+.galery {
+    margin-top: 1.2%;
+    margin-bottom: 0.8%;
+}
+
+.maindiv {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url('Images/Fundal1.jpeg');
+    background-size: 100% 100%;
+    animation: slider 20s infinite linear;
+}
+
+@keyframes slider {
+    0% {
+        background-image: url('Images/Fundal1.jpeg');
+    }
+    40% {
+        background-image: url('Images/Fundal\ 2.jpeg');
+    }
+    80% {
+        background-image: url('Images/Fundal\ 3.jpeg');
+    }
+}
+
+.textgalery {
+    position: absolute;
+    margin-top: 4px;
+    font-size: 26px;
+    left: 50%;
+    transform: translate(-50%);
+    color: #f3bf3cfd;
+    font-family: 'Common Pixel', sans-serif;
+}
+
+.copyright {
+    margin-top: 46.9%;
+    position: absolute;
+    padding: 28px;
+    width: 100%;
+    background-color: black;
+}
+
+.textcopy {
+    color: #ffffff;
+    text-align: center;
+}
